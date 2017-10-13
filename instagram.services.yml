@@ -1,0 +1,9 @@
+services:
+  instagram.instagram_storage:
+    class: Drupal\instagram\InstagramStorage
+    arguments: ['@database']
+  instagram.instagram_api:
+    class: Drupal\instagram\InstagramApi
+  instagram.instagram_controller:
+    class: Drupal\instagram\Controller\InstagramController
+    arguments: ['@instagram.instagram_api', '@instagram.instagram_storage']

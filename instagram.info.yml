@@ -1,0 +1,7 @@
+name: 'Instagram'
+type: module
+description: 'Instagram API calls'
+package: Custom
+version: '8.x-1.0'
+core: 8.x
+configure: instagram.settings

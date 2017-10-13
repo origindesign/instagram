@@ -1,0 +1,14 @@
+instagram.settings:
+  path: '/admin/config/services/instagram'
+  defaults:
+    _form: '\Drupal\instagram\Form\InstagramSettingsForm'
+    _title: 'Instagram settings'
+  requirements:
+    _permission: 'administer instagram'
+instagram.generate:
+  path: '/instagram/generate'
+  defaults:
+    _controller: '\Drupal\instagram\Controller\InstagramController::getImages'
+    _title: 'Store Instagram Images to the database'
+  requirements:
+    _access: 'TRUE'

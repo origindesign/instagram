@@ -1,0 +1,6 @@
+instagram.settings:
+  title: 'Instagram'
+  description: 'Configure your Instagram credentials'
+  route_name: instagram.settings
+  parent: system.admin_config_services
+  weight: -7

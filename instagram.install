@@ -1,0 +1,76 @@
+<?php
+
+function instagram_schema() {
+
+    $schema['instagram_images'] = array(
+
+        'fields' => array(
+            'iid'=>array(
+                'type'=>'serial',
+                'not null' => TRUE,
+            ),
+            'id'=>array(
+                'type' => 'varchar',
+                'length' => 128,
+                'not null' => TRUE,
+                'default' => '',
+            ),
+            'link'=>array(
+                'type' => 'varchar',
+                'length' => 128,
+                'not null' => TRUE,
+                'default' => '',
+            ),
+            'created_time'=>array(
+                'type' => 'varchar',
+                'length' => 128,
+                'not null' => TRUE,
+                'default' => '',
+            ),
+            'type'=>array(
+                'type' => 'varchar',
+                'length' => 128,
+                'not null' => TRUE,
+                'default' => '',
+            ),
+            'thumbnail'=>array(
+                'type' => 'varchar',
+                'length' => 128,
+                'not null' => TRUE,
+                'default' => '',
+            ),
+            'standard_resolution'=>array(
+                'type' => 'varchar',
+                'length' => 128,
+                'not null' => TRUE,
+                'default' => '',
+            ),
+            'low_resolution'=>array(
+                'type' => 'varchar',
+                'length' => 128,
+                'not null' => TRUE,
+                'default' => '',
+            ),
+            'likes'=>array(
+                'type' => 'varchar',
+                'length' => 128,
+                'default' => '',
+            ),
+            'caption'=>array(
+                'type' => 'text',
+            ),
+            'tags'=>array(
+                'type' => 'text',
+            )
+        ),
+        'unique keys' => array(
+            'id' => array('id'),
+        ),
+        'primary key' => array('iid')
+
+    );
+
+
+    return $schema;
+
+}

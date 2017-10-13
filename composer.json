@@ -1,0 +1,16 @@
+{
+    "name": "origindesign/instagram",
+    "description": "Instagram - Custom Drupal 8 Module for Instagram API calls",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lindsay Wilson",
+            "email": "lwilson@origindesign.ca"
+        }
+    ],
+    "type": "drupal-module",
+    "require": {
+		"php": ">=5.6"
+    },
+	"minimum-stability": "dev"
+}

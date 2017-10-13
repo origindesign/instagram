@@ -1,0 +1,18 @@
+instagram.settings:
+  type: config_object
+  label: 'Instagram Settings'
+  mapping:
+    api_key:
+      type: string
+    api_secret:
+      type: string
+    api_callback:
+      type: string
+    access_token:
+      type: string
+    user_id:
+      type: string
+    hashtag:
+      type: string
+    count:
+      type: string

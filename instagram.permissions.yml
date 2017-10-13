@@ -1,0 +1,4 @@
+administer instagram:
+    title: 'Administer Instagram settings.'
+    description: 'Adding or updating Instagram API credentials.'
+    restrict access: true
