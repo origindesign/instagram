@@ -88,17 +88,19 @@ class InstagramController extends ControllerBase {
         // Save images to DB
         if($this->storage->storeImages($images,$truncate)){
 
-            drupal_set_message($config->get('count')." Instagram images have been saved to the database");
+            $response = $config->get('count')." Instagram images have been saved to the database";
+            drupal_set_message($response);
 
         }else{
 
-            drupal_set_message("An error occured while saving instagram images to the database", 'error');
+            $response = "An error occured while saving instagram images to the database";
+            drupal_set_message($response, 'error');
 
         }
 
         $build[] = array(
             '#type' => 'markup',
-            '#markup' => '',
+            '#markup' => $response,
         );
         $build['#cache']['max-age'] = 0;
 
@@ -125,17 +127,19 @@ class InstagramController extends ControllerBase {
         // Save images to DB
         if($this->storage->storeImages($images,$truncate)){
 
-            drupal_set_message($config->get('count')." Instagram images have been saved to the database");
+            $response = $config->get('count')." Instagram images have been saved to the database";
+            drupal_set_message($response);
 
         }else{
 
-            drupal_set_message("An error occured while saving instagram images to the database", 'error');
+            $response = "An error occured while saving instagram images to the database";
+            drupal_set_message($response, 'error');
 
         }
 
         $build[] = array(
             '#type' => 'markup',
-            '#markup' => '',
+            '#markup' => $response,
         );
         $build['#cache']['max-age'] = 0;
 
