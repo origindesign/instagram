@@ -213,9 +213,9 @@ class InstagramApi{
                 "link" => $media['link'],
                 "created_time" => $media['created_time'],
                 "type" => $media['type'],
-                "thumbnail" => $media['images']['standard_resolution']['url'],
+                "thumbnail" => $media['images']['thumbnail']['url'],
                 "standard_resolution" => $media['images']['standard_resolution']['url'],
-                "low_resolution" => $media['images']['standard_resolution']['url'],
+                "low_resolution" => $media['images']['low_resolution']['url'],
                 "likes" => $media['likes']['count'],
                 "caption" => $media['caption']['text'],
                 "tags" => $media['tags']
@@ -426,9 +426,9 @@ class InstagramApi{
                 "link" => $media['link'],
                 "created_time" => $media['created_time'],
                 "type" => $media['type'],
-                "thumbnail" => $media['images']['standard_resolution']['url'],
+                "thumbnail" => $media['images']['thumbnail']['url'],
                 "standard_resolution" => $media['images']['standard_resolution']['url'],
-                "low_resolution" => $media['images']['standard_resolution']['url'],
+                "low_resolution" => $media['images']['low_resolution']['url'],
                 "likes" => $media['likes']['count'],
                 "caption" => $media['caption']['text'],
                 "tags" => $media['tags']
